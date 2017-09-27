@@ -8,7 +8,7 @@ jobs:
       - mule-kubernetes
     
   - name: deploy-backend-to-k8s
-    type: deploy
+    type: runSh
     steps:
       - IN: deploy-backend-manifest
       - IN: kubernetes-deploy-cluster
